@@ -1,3 +1,27 @@
+# This demo is a simple React app that uses the [VietMap tilemap API](https://maps.vietmap.vn) to display the map of Vietnam with custom icon on the map.
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## This project contains the following components:
+- App.js: The main component that contains the map and the custom icon.
+- Map.js: The component that contains the map.
+- Marker.js: The component representing how to show the marker on the map.
+- Line.js: The component representing how to show the line on the map.
+- Marker Cluster.js: The component representing how to show the marker cluster on the map.
+- Popup.js: The component representing how to show the popup on the map.
+
+## More documentations about VietMap SDK: 
+[https://maps.vietmap.vn/docs/sdk-web-gl/overview/](https://maps.vietmap.vn/docs/sdk-web-gl/overview/)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
