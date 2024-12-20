@@ -1,6 +1,6 @@
 import './marker-cluster.css';
-import * as vietmapGl from 'map-test-npm';
-import "map-test-npm/vietmap-gl.css";
+import * as vietmapGl from '@vietmap/vietmap-gl-js';
+import "@vietmap/vietmap-gl-js/vietmap-gl.css";
 import React, { useEffect, useRef } from 'react';
 import geojsonData from './data-marker.json';
 
@@ -81,12 +81,12 @@ function MarkerCluster() {
         });
 
         map.current.on('click', 'clusters', async (e) => {
-            const features = map.queryRenderedFeatures(e.point, {
+            const features = map.current.queryRenderedFeatures(e.point, {
                 layers: ['clusters']
             });
             const clusterId = features[0].properties.cluster_id;
-            const zoom = await map.getSource('earthquakes').getClusterExpansionZoom(clusterId);
-            map.easeTo({
+            const zoom = await map.current.getSource('earthquakes').getClusterExpansionZoom(clusterId);
+            map.current.easeTo({
                 center: features[0].geometry.coordinates,
                 zoom
             });

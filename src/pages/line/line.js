@@ -1,6 +1,6 @@
 import './line.css';
-import * as vietmapGl from 'map-test-npm';
-import 'map-test-npm/vietmap-gl.css'
+import * as vietmapGl from '@vietmap/vietmap-gl-js';
+import '@vietmap/vietmap-gl-js/vietmap-gl.css'
 import { useEffect, useRef } from 'react';
 
 function Line() {

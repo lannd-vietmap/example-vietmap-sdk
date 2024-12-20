@@ -7,11 +7,11 @@ import MarkerCluster from './pages/marker-cluster/marker-cluster.js';
 
 function App() {
   return (
-      // <Map></Map>
+      <Map></Map>
       // <Marker></Marker>
       // <Popup></Popup>
       // <Line></Line>
-      <MarkerCluster></MarkerCluster>
+      // <MarkerCluster></MarkerCluster>
   );
 }
 

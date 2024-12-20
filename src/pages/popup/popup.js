@@ -1,7 +1,7 @@
 import './popup.css';
 import React, { useEffect, useRef } from "react";
-import * as vietmapGl from 'map-test-npm';
-import "map-test-npm/vietmap-gl.css"
+import * as vietmapGl from '@vietmap/vietmap-gl-js';
+import "@vietmap/vietmap-gl-js/vietmap-gl.css"
 
 function Popup() {
     const mapContainer = useRef(null);
